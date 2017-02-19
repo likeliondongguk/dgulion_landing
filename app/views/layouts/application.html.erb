@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  
+	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+  <title>멋쟁이 사자처럼 @동국대학교</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'mark_dgulikelion.png', type: 'image/png' %>
 </head>
-<body>
+<body class="smoothscroll enable-animation">
 
 <%= yield %>
-
+<script type="text/javascript">var plugin_path = '/assets/plugins/';</script>
+<script type="text/javascript" src="/assets/scripts.js"></script>
 </body>
 </html>
